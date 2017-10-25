@@ -5934,7 +5934,12 @@ article {
     left: -50%; } }
 
 .subscribe {
-  margin-top: 30px; }
+  margin-top: 30px;
+  justify-content: center; }
+  .subscribe .row > div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 400px; }
 
 footer {
   padding-top: 60px;
