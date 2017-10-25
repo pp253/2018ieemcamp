@@ -5900,9 +5900,6 @@ header {
   header * {
     color: #fff; }
 
-article {
-  margin-top: 60px; }
-
 .section-fluid {
   margin: 0;
   padding: 0;
@@ -5927,11 +5924,7 @@ article {
     background-position: center;
     background-size: cover; }
 
-.section-fluid.h-400 > .big-image-left,
-.section-fluid.h-400 > .big-image-right {
-  height: 400px; }
-
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .section-fluid > div {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -5941,7 +5934,17 @@ article {
     left: 50%; }
   .section-fluid .big-image-right + div {
     position: relative;
+    right: 50%; } }
+
+@media (min-width: 1200px) {
+  .section-fluid .big-image-right {
+    left: 50%; }
+  .section-fluid .big-image-right + div {
     right: 600px; } }
+
+.section-fluid.h-400 > .big-image-left,
+.section-fluid.h-400 > .big-image-right {
+  height: 400px; }
 
 .subscribe {
   margin-top: 30px;

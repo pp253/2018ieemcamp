@@ -115,14 +115,7 @@ header {
   }
 }
 
-.section-fluid.h-400 {
-  > .big-image-left,
-  > .big-image-right {
-    height: 400px;
-  }
-}
-
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .section-fluid{
     > div {
       -ms-flex: 0 0 50%;
@@ -137,8 +130,27 @@ header {
 
     .big-image-right + div {
       position: relative;
+      right: 50%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-fluid{
+    .big-image-right {
+      left: 50%;
+    }
+
+    .big-image-right + div {
       right: 600px;
     }
+  }
+}
+
+.section-fluid.h-400 {
+  > .big-image-left,
+  > .big-image-right {
+    height: 400px;
   }
 }
 
