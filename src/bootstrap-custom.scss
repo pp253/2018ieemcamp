@@ -50,6 +50,10 @@ $primary: $red;
   }
 }
 
+.width-limit-1200 {
+  max-width: 1200px;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -101,11 +105,12 @@ article {
     align-self: center;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
-    max-width: 100%;
+    max-width: 600px;
   }
 
   .big-image-left,
   .big-image-right {
+    max-width: 100%;
     margin: 0;
     padding: 0;
     background-repeat: no-repeat;
@@ -126,7 +131,7 @@ article {
   > div {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
-    max-width: 50%;
+    max-width: 600px;
   }
 
   .big-image-right {
@@ -136,7 +141,7 @@ article {
 
   .big-image-right + div {
     position: relative;
-    left: -50%;
+    right: 600px;
   }
 }
 }
