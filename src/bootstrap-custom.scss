@@ -41,6 +41,9 @@ $primary: $red;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
+// custom
+$width-limit: 1200px;
+
 .btn-icon.btn-sm {
   padding: 0 0.25rem;
 
@@ -51,7 +54,7 @@ $primary: $red;
 }
 
 .width-limit-1200 {
-  max-width: 1200px;
+  max-width: $width-limit;
 }
 
 nav {
@@ -81,87 +84,84 @@ header {
   background-position: center;
   background-size: cover;
 
-  * {
+  .title {
     color: #fff;
   }
 }
 
-.section-fluid {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-
-  > div {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    align-self: center;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 600px;
-  }
-
-  .big-image-left,
-  .big-image-right {
-    max-width: 100%;
+article {
+  .section-fluid {
     margin: 0;
     padding: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-}
-
-@media (min-width: 768px) {
-  .section-fluid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  
     > div {
-      -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
-      max-width: 600px;
+      margin: 15px 0;
+      padding: 0 15px;
+      align-self: center;
+      flex: 0 0 100%;
     }
-
+  
+    .big-image-left,
     .big-image-right {
-      position: relative;
-      left: 50%;
-    }
-
-    .big-image-right + div {
-      position: relative;
-      right: 50%;
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .section-fluid{
-    .big-image-right {
-      left: 50%;
-    }
-
-    .big-image-right + div {
-      right: 600px;
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
   }
-}
-
-.section-fluid.h-400 {
-  > .big-image-left,
-  > .big-image-right {
-    height: 400px;
+  
+  @media (min-width: 768px) {
+    .section-fluid{
+      > div {
+        flex: 0 0 50%;
+        max-width: $width-limit / 2;
+      }
+  
+      .big-image-right {
+        position: relative;
+        left: 50%;
+      }
+  
+      .big-image-right + div {
+        position: relative;
+        right: 50%;
+      }
+    }
   }
-}
-
-.subscribe {
-  margin-top: 30px;
-  justify-content: center;
-
-  .row > div {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    max-width: 400px;
+  
+  @media (min-width: 1200px) {
+    .section-fluid{
+      .big-image-right {
+        left: 50%;
+      }
+  
+      .big-image-right + div {
+        right: $width-limit / 2;
+      }
+    }
+  }
+  
+  .section-fluid.h-400 {
+    > .big-image-left,
+    > .big-image-right {
+      height: 400px;
+    }
+  }
+  
+  .subscribe {
+    margin-top: 30px;
+    justify-content: center;
+  
+    .row > div {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      max-width: $width-limit / 3;
+    }
   }
 }
 

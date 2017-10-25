@@ -5897,26 +5897,22 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
-  header * {
+  header .title {
     color: #fff; }
 
-.section-fluid {
+article .section-fluid {
   margin: 0;
   padding: 0;
   width: 100%;
   display: flex;
   flex-wrap: wrap; }
-  .section-fluid > div {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+  article .section-fluid > div {
+    margin: 15px 0;
+    padding: 0 15px;
     align-self: center;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 600px; }
-  .section-fluid .big-image-left,
-  .section-fluid .big-image-right {
+    flex: 0 0 100%; }
+  article .section-fluid .big-image-left,
+  article .section-fluid .big-image-right {
     max-width: 100%;
     margin: 0;
     padding: 0;
@@ -5925,31 +5921,30 @@ header {
     background-size: cover; }
 
 @media (min-width: 768px) {
-  .section-fluid > div {
-    -ms-flex: 0 0 50%;
+  article .section-fluid > div {
     flex: 0 0 50%;
     max-width: 600px; }
-  .section-fluid .big-image-right {
+  article .section-fluid .big-image-right {
     position: relative;
     left: 50%; }
-  .section-fluid .big-image-right + div {
+  article .section-fluid .big-image-right + div {
     position: relative;
     right: 50%; } }
 
 @media (min-width: 1200px) {
-  .section-fluid .big-image-right {
+  article .section-fluid .big-image-right {
     left: 50%; }
-  .section-fluid .big-image-right + div {
+  article .section-fluid .big-image-right + div {
     right: 600px; } }
 
-.section-fluid.h-400 > .big-image-left,
-.section-fluid.h-400 > .big-image-right {
+article .section-fluid.h-400 > .big-image-left,
+article .section-fluid.h-400 > .big-image-right {
   height: 400px; }
 
-.subscribe {
+article .subscribe {
   margin-top: 30px;
   justify-content: center; }
-  .subscribe .row > div {
+  article .subscribe .row > div {
     padding-top: 15px;
     padding-bottom: 15px;
     max-width: 400px; }
