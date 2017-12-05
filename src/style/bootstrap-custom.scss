@@ -40,9 +40,7 @@ $cyan:    #17a2b8 !default;
 $primary: $red;
 
 @import "node_modules/bootstrap/scss/bootstrap";
-
-// custom
-$width-limit: 1200px;
+@import "./constant";
 
 .btn-icon.btn-sm {
   padding: 0 0.25rem;
@@ -77,16 +75,29 @@ nav {
 }
 
 header {
-  padding-top: 60vh; /* 在直立的平板上會有問題 */
+  margin-bottom: 15px;
+  padding-top: 62px + 15px;
+  padding-bottom: 15px;
+  background-color: $red;
+
+  .title {
+    color: #fff;
+
+    h1 {
+      margin: 0;
+    }
+  }
+}
+
+header.full {
+  margin: 0;
+  padding: 0;
+  padding-top: 60vh;
   height: 100vh;
   background-image: url("https://img1.wsimg.com/isteam/stock/107466/");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  .title {
-    color: #fff;
-  }
 }
 
 article {

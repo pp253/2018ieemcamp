@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -5890,15 +5889,24 @@ nav {
     float: right; }
 
 header {
+  margin-bottom: 15px;
+  padding-top: 77px;
+  padding-bottom: 15px;
+  background-color: #dc3545; }
+  header .title {
+    color: #fff; }
+    header .title h1 {
+      margin: 0; }
+
+header.full {
+  margin: 0;
+  padding: 0;
   padding-top: 60vh;
-  /* 在直立的平板上會有問題 */
   height: 100vh;
   background-image: url("https://img1.wsimg.com/isteam/stock/107466/");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
-  header .title {
-    color: #fff; }
 
 article .section-fluid {
   margin: 0;

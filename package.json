@@ -4,7 +4,7 @@
   "description": "2018ieemcamp.me",
   "main": "main.js",
   "scripts": {
-    "build": "node-sass ./src/bootstrap-custom.scss ./src/bootstrap-custom.css"
+    "build": "node-sass ./src/style/bootstrap-custom.scss ./src/style/bootstrap-custom.css"
   },
   "author": "pp253",
   "license": "Apache-2.0",

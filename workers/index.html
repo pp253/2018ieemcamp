@@ -8,7 +8,6 @@
   <title>2018 清大工程領袖營</title>
 
   <link rel="stylesheet" href="/src/style/bootstrap-custom.css">
-  <link rel="stylesheet" href="/src/style/home.css">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108648613-1"></script>
@@ -45,63 +44,77 @@
     </div>
   </nav>
 
-  <header class="full">
+  <header>
     <div class="title container-fluid width-limit-1200">
-      <h2>2018 7/12 - 7/19</h2>
-      <h1>清大工程領袖營</h1>
-    </div>
-    <div class="container-fluid width-limit-1200 mt-5">
-      <div class="alert alert-dark" role="alert">
-        <a href="qwe">第一階段錄取名單出爐了！</a>
-      </div>
+      <h1>工人版</h1>
     </div>
   </header>
 
-  <article class="container-fluid m-0 p-0">
-    <section class="section-fluid h-400">
-      <div class="big-image-left pic-1"></div>
-      <div>
-        <h2>什麼是清大工程領袖營？</h2>
-        <p>您能滿足客戶的各種需求。顯示最常見的問題，方便大家搜尋。您能滿足客戶的各種需求。顯示最常見的問題，方便大家搜尋。您能滿足客戶的各種需求。顯示最常見的問題，方便大家搜尋。您能滿足客戶的各種需求。顯示最常見的問題，方便大家搜尋。您能滿足客戶的各種需求。顯示最常見的問題，方便大家搜尋。</p>
-        <p>
-          <a href="/">深入了解工程領袖營 ></a>
-        </p>
-      </div>
+  <article class="container-fluid width-limit-1200">
+    <section>
+      <h3>Login Template</h3>
+      <form>
+        <div class="form-group">
+          <label for="studentId">學號</label>
+          <input type="text" class="form-control" id="studentId" name="studentId" placeholder="105034000">
+        </div>
+        <div class="form-group">
+          <label for="password">密碼</label>
+          <input type="password" class="form-control" id="password" name="password" placeholder="密碼">
+        </div>
+        <button type="submit" class="btn btn-primary">登入</button>
+      </form>
     </section>
-    <section class="section-fluid h-400">
-      <div class="big-image-right pic-1"></div>
-      <div>
-        <h2>工程領袖營在做什麼？</h2>
-        <p>您能滿足客戶的各種需求。顯示最常見的問題，方便大家搜尋。您能滿足客戶的各種需求。顯示最常見的問題，方便大家搜尋。您能滿足客戶的各種需求。顯示最常見的問題，方便大家搜尋。您能滿足客戶的各種需求。顯示最常見的問題，方便大家搜尋。您能滿足客戶的各種需求。顯示最常見的問題，方便大家搜尋。</p>
-        <p>
-          <a href="/">歷屆清大工程領袖營回顧 ></a>
-        </p>
-      </div>
-    </section>
-    <section class="subscribe container-fluid text-center">
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-4">
-          <h3>關注我們</h3>
-          <p>
-            <a href="https://www.facebook.com/2018ieemcamp/" class="btn btn-primary">
-              <i class="fa fa-facebook-official pr-1" aria-hidden="true"></i>
-              2018 清大工程領袖營
-            </a>
-          </p>
+
+    <section>
+      <h3>Write Off Application Form</h3>
+      <form>
+        <div class="form-group">
+          <label for="applicant">申請人學號</label>
+          <input type="text" class="form-control" id="applicant" name="applicant" placeholder="105034000">
         </div>
-        <div class="col-12 col-lg-4">
-          <h3>聯絡我們</h3>
-          <p>
-            您可以直接在<a href="https://www.facebook.com/2018ieemcamp/">我們的Facebook粉絲專頁</a>與我們聯繫，或是寄信到<a href="mailto:">清大工程領袖營信箱</a>，我們將在一日內回覆。
-          </p>
+        <div class="form-group">
+          <label for="receipt">發票、收據</label>
+          <input type="file" class="form-control" id="receipt" name="receipt" placeholder="發票、收據照片">
         </div>
-        <div class="col-12 col-lg-4">
-          <h3>報名</h3>
-          <p>
-            <a href="https://www.facebook.com/2018ieemcamp/" class="btn btn-primary">報名方式 ></a>
-          </p>
+
+        <h4>銷帳</h4>
+        <div class="form-row">
+          <div class="form-group col-6">
+            <label for="applicant">股</label>
+            <select id="inputState" class="form-control">
+              <option selected>生活股</option>
+              <option>活動股</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-6">
+            <label for="applicant">任務</label>
+            <select id="inputState" class="form-control">
+              <option selected>預設</option>
+              <option>...</option>
+            </select>
+          </div>
         </div>
-      </div>
+
+        <div class="form-row">
+          <div class="form-group col-12 col-md-6">
+            <input type="text" class="form-control" id="name" placeholder="細項名稱">
+          </div>
+          <div class="form-group col-4 col-md-2">
+            <input type="number" class="form-control" id="unitPrice" placeholder="單價">
+          </div>
+          <div class="form-group col-4 col-md-2">
+            <input type="number" class="form-control" id="number" placeholder="數量">
+          </div>
+          <div class="form-group col-4 col-md-2">
+            <input type="number" class="form-control" id="subtotal" placeholder="小計" readonly>
+          </div>
+        </div>
+        <button class="btn btn-primary">新增細項</button>
+        <button class="btn btn-primary">新增銷帳預算類別</button>
+        <button type="submit" class="btn btn-primary">申請</button>
+      </form>
     </section>
   </article>
 
