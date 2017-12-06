@@ -117,6 +117,7 @@ article {
   
     .big-image-left,
     .big-image-right {
+      height: 250px;
       max-width: 100%;
       margin: 0;
       padding: 0;
@@ -143,6 +144,21 @@ article {
         right: 50%;
       }
     }
+
+    .section-fluid.md-h-400 {
+      > .big-image-left,
+      > .big-image-right {
+        height: 400px;
+      }
+    }
+    
+    .section-fluid.md-h-450 {
+      > .big-image-left,
+      > .big-image-right {
+        height: 450px;
+      }
+    }
+    
   }
   
   @media (min-width: 1200px) {
@@ -154,13 +170,6 @@ article {
       .big-image-right + div {
         right: $width-limit / 2;
       }
-    }
-  }
-  
-  .section-fluid.h-400 {
-    > .big-image-left,
-    > .big-image-right {
-      height: 400px;
     }
   }
   
