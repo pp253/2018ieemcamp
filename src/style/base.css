@@ -5914,6 +5914,13 @@ article {
   background-color: #fff;
   padding-top: 2rem;
   padding-bottom: 5rem; }
+  article section section {
+    padding-left: 15px;
+    padding-right: 15px; }
+  article ul, article ol {
+    padding-left: 1.25rem; }
+    article ul li, article ol li {
+      margin-bottom: 0.5rem; }
 
 footer {
   padding-top: 32px;
