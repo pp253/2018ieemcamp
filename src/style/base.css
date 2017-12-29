@@ -1,9 +1,9 @@
 * {
   font-family: 'Microsoft JhengHei', Arial, Helvetica, sans-serif; }
 
-p {
+p, ul, ol, li {
   color: #595757; }
-  p a:not(.btn) {
+  p a:not(.btn), ul a:not(.btn), ol a:not(.btn), li a:not(.btn) {
     color: #3e3a39;
     text-decoration: underline; }
 
@@ -5927,6 +5927,13 @@ article.container-fluid {
       padding-left: 1.25rem; }
       article.container-fluid section ul li, article.container-fluid section ol li {
         margin-bottom: 0.5rem; }
+    article.container-fluid section table {
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
+      article.container-fluid section table th, article.container-fluid section table td {
+        padding: 0.25rem;
+        border: 1px solid #3e3a39; }
 
 footer {
   padding-top: 32px;
