@@ -21,16 +21,35 @@ body {
 
 nav {
   position: fixed;
+  height: $nav-height;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 16px 0;
+  padding: (($nav-height - 31px - 1px) / 2) 0;
   background-color: rgba(255,255,255,0.85);
   border-bottom: 1px solid #999;
   z-index: 10000;
 
   .logo {
     float: left;
+
+    a {
+      padding-left: $logo-height + ($nav-height - $logo-height) / 2;
+      color: #000;
+      text-decoration: none;
+      line-height: 31px;
+
+      .logo-img {
+        display: block;
+        height: $logo-height;
+        width: $logo-height;
+        background-image: url(/src/image/logo.png);
+        background-size: 100% 100%;
+        display: block;
+        position: absolute;
+        top: ($nav-height - $logo-height) / 2;
+      }
+    }
   }
 
   .menu {
