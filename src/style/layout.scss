@@ -15,6 +15,8 @@ body {
   max-width: $width-limit;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 nav {
@@ -22,7 +24,7 @@ nav {
   top: 0;
   left: 0;
   width: 100vw;
-  padding: 16px 16px;
+  padding: 16px 0;
   background-color: rgba(255,255,255,0.85);
   border-bottom: 1px solid #999;
   z-index: 10000;
@@ -33,6 +35,10 @@ nav {
 
   .menu {
     float: right;
+
+    a.btn {
+      min-width: 31px;
+    }
   }
 }
 
@@ -49,21 +55,23 @@ header {
   }
 }
 
-article {
+article.container-fluid {
   background-color: #fff;
   padding-top: 2rem;
   padding-bottom: 5rem;
+  padding-left: 0;
+  padding-right: 0;
 
-  section section {
+  section {
     padding-left: 15px;
     padding-right: 15px;
-  }
+    
+    ul, ol {
+      padding-left: 1.25rem;
 
-  ul, ol {
-    padding-left: 1.25rem;
-
-    li {
-      margin-bottom: 0.5rem;
+      li {
+        margin-bottom: 0.5rem;
+      }
     }
   }
 }

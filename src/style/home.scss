@@ -18,6 +18,9 @@ article {
   .section-fluid {
     margin: 0;
     padding: 0;
+    padding-left: 0 !important;
+
+    padding-right: 0 !important;
     width: 100%;
     display: flex;
     flex-wrap: wrap;

@@ -5886,14 +5886,16 @@ body {
 .width-limit-1200 {
   max-width: 1200px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
 
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  padding: 16px 16px;
+  padding: 16px 0;
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #999;
   z-index: 10000; }
@@ -5901,6 +5903,8 @@ nav {
     float: left; }
   nav .menu {
     float: right; }
+    nav .menu a.btn {
+      min-width: 31px; }
 
 header {
   padding-top: 128px;
@@ -5910,17 +5914,19 @@ header {
     header .title h1 {
       margin: 0; }
 
-article {
+article.container-fluid {
   background-color: #fff;
   padding-top: 2rem;
-  padding-bottom: 5rem; }
-  article section section {
+  padding-bottom: 5rem;
+  padding-left: 0;
+  padding-right: 0; }
+  article.container-fluid section {
     padding-left: 15px;
     padding-right: 15px; }
-  article ul, article ol {
-    padding-left: 1.25rem; }
-    article ul li, article ol li {
-      margin-bottom: 0.5rem; }
+    article.container-fluid section ul, article.container-fluid section ol {
+      padding-left: 1.25rem; }
+      article.container-fluid section ul li, article.container-fluid section ol li {
+        margin-bottom: 0.5rem; }
 
 footer {
   padding-top: 32px;
