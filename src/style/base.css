@@ -1,11 +1,16 @@
 * {
   font-family: 'Microsoft JhengHei', Arial, Helvetica, sans-serif; }
 
-p, ul, ol, li {
+p, ul, ol, li, table {
   color: #595757; }
-  p a:not(.btn), ul a:not(.btn), ol a:not(.btn), li a:not(.btn) {
+  p b, ul b, ol b, li b, table b {
+    color: #3e3a39; }
+  p a:not(.btn), ul a:not(.btn), ol a:not(.btn), li a:not(.btn), table a:not(.btn) {
     color: #3e3a39;
     text-decoration: underline; }
+
+table th {
+  color: #3e3a39; }
 
 /*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
@@ -5894,7 +5899,6 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
   width: 100%;
   padding: 16px 0;
   background-color: rgba(255, 255, 255, 0.85);
@@ -5922,8 +5926,7 @@ article.container-fluid {
   padding-left: 0;
   padding-right: 0; }
   article.container-fluid section {
-    padding-left: 15px;
-    padding-right: 15px; }
+    padding: 1rem 15px; }
     article.container-fluid section ul, article.container-fluid section ol {
       padding-left: 1.25rem; }
       article.container-fluid section ul li, article.container-fluid section ol li {
@@ -5933,7 +5936,7 @@ article.container-fluid {
       margin-top: 1rem;
       margin-bottom: 1rem; }
       article.container-fluid section table th, article.container-fluid section table td {
-        padding: 0.25rem;
+        padding: 0.25rem 0.5rem;
         border: 1px solid #3e3a39; }
 
 footer {

@@ -7,12 +7,22 @@ h1, h2, h3, h4, h5 {
   // text-shadow: 1px 1px 0px $primary;
 }
 
-p, ul, ol, li {
+p, ul, ol, li, table {
   color: $p-color;
   
+  b {
+    color: $header-color;
+  }
+
   a:not(.btn) {
     color: $header-color;
     text-decoration: underline;
+  }
+}
+
+table {
+  th {
+    color: $header-color;
   }
 }
 
