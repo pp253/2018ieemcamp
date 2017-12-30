@@ -1,17 +1,6 @@
 * {
   font-family: 'Microsoft JhengHei', Arial, Helvetica, sans-serif; }
 
-p, ul, ol, li, table {
-  color: #595757; }
-  p b, ul b, ol b, li b, table b {
-    color: #3e3a39; }
-  p a:not(.btn), ul a:not(.btn), ol a:not(.btn), li a:not(.btn), table a:not(.btn) {
-    color: #3e3a39;
-    text-decoration: underline; }
-
-table th {
-  color: #3e3a39; }
-
 /*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -5882,6 +5871,17 @@ a.text-dark:focus, a.text-dark:hover {
 body {
   background-color: #72caf2; }
 
+p, ul, ol, li, table {
+  color: #595757; }
+  p b, ul b, ol b, li b, table b {
+    color: #3e3a39; }
+  p a:not(.btn), ul a:not(.btn), ol a:not(.btn), li a:not(.btn), table a:not(.btn) {
+    color: #3e3a39;
+    text-decoration: underline; }
+
+table th {
+  color: #3e3a39; }
+
 .btn-icon.btn-sm, .btn-group-sm > .btn-icon.btn {
   padding: 0 0.25rem; }
   .btn-icon.btn-sm i, .btn-group-sm > .btn-icon.btn i {
@@ -5909,7 +5909,7 @@ nav {
     float: left; }
     nav .logo a {
       padding-left: 52px;
-      color: #000;
+      color: #3e3a39;
       text-decoration: none;
       line-height: 31px; }
       nav .logo a .logo-img {
@@ -5927,8 +5927,8 @@ nav {
       min-width: 31px; }
 
 header {
-  padding-top: 128px;
-  padding-bottom: 32px; }
+  padding-top: calc(96px + 5%);
+  padding-bottom: calc(32px + 5%); }
   header .title {
     color: #3e3a39; }
     header .title h1 {
@@ -5943,7 +5943,7 @@ article.container-fluid {
   article.container-fluid section {
     padding: 1rem 15px; }
     article.container-fluid section ul, article.container-fluid section ol {
-      padding-left: 1.25rem; }
+      padding-left: 1.5rem; }
       article.container-fluid section ul li, article.container-fluid section ol li {
         margin-bottom: 0.5rem; }
     article.container-fluid section table {
@@ -5953,6 +5953,12 @@ article.container-fluid {
       article.container-fluid section table th, article.container-fluid section table td {
         padding: 0.25rem 0.5rem;
         border: 1px solid #3e3a39; }
+    article.container-fluid section table.table-list th, article.container-fluid section table.table-list td {
+      border: none;
+      vertical-align: top; }
+    article.container-fluid section table.table-list td:first-child {
+      width: 5rem;
+      color: #3e3a39; }
 
 footer {
   padding-top: 32px;
