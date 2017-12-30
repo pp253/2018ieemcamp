@@ -6,7 +6,7 @@ html(lang="zh-tw")
     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
     meta(http-equiv="X-UA-Compatible" content="ie=edge")
 
-    meta(property="og:description" content=title)
+    meta(property="og:description" content=description)
     meta(property="og:title" content=pagetitle ? pagetitle + ' | ' + title : title)
     meta(property="og:type" content="website")
     meta(property="og:url" content=url)
@@ -24,13 +24,9 @@ html(lang="zh-tw")
       {
         "@context": "http://schema.org",
         "@type": "Organization",
-        "url": "http://www.example.com",
-        "name": "Unlimited Ball Bearings Corp.",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+1-401-555-1212",
-          "contactType": "Customer service"
-        }
+        "url": url,
+        "name": title,
+        "description": description
       }
     script(async src="https://www.googletagmanager.com/gtag/js?id=UA-108648613-1")
     script.
