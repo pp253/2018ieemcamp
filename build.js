@@ -11,7 +11,7 @@ Metalsmith(__dirname)
     url: "https://2018ieemcamp.me/"
   })
   .source('./src')
-  .destination('./build')
+  .destination('./')
   .clean(false)
   .use(markdown())
   .use(permalinks())
