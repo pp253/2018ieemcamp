@@ -1,0 +1,44 @@
+doctype html
+html(lang="zh-tw")
+  block var
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+
+    meta(property="og:description" content=title)
+    meta(property="og:title" content=pagetitle ? pagetitle + ' | ' + title : title)
+    meta(property="og:type" content="website")
+    meta(property="og:url" content=url)
+    meta(property="og:image" content="/image/logo.png")
+    meta(property="og:site_name" content=title)
+
+    title=pagetitle ? pagetitle + ' | ' + title : title
+
+    link(rel="icon" href="/src/image/favicon.png")
+
+    link(rel="stylesheet" href="/src/style/base.css")
+    block styles
+
+    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-108648613-1")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-108648613-1');
+    block scripts
+
+  body
+    include ../components/nav
+
+    block header
+
+    block article
+
+    include ../components/footer
+
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js', integrity='sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js', integrity='sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ', crossorigin='anonymous')
+    script(src='https://use.fontawesome.com/f26aa07c14.js')
