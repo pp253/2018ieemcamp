@@ -6082,6 +6082,8 @@ article.container-fluid {
     article.container-fluid section table.table-list td:first-child {
       width: 5rem;
       color: #3e3a39; }
+    article.container-fluid section .badge {
+      margin-right: 0.25rem; }
 
 footer {
   padding-top: 32px;

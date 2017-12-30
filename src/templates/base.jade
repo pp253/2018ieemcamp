@@ -19,7 +19,19 @@ html(lang="zh-tw")
 
     link(rel="stylesheet" href="/src/style/base.css")
     block styles
-
+    
+    script.
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "http://www.example.com",
+        "name": "Unlimited Ball Bearings Corp.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-401-555-1212",
+          "contactType": "Customer service"
+        }
+      }
     script(async src="https://www.googletagmanager.com/gtag/js?id=UA-108648613-1")
     script.
       window.dataLayer = window.dataLayer || [];

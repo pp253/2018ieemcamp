@@ -1,0 +1,9 @@
+Sitemap: https://2018ieemcamp.me/sitemap.xml
+Disallow: /src/
+Disallow: /build.js
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /LICENSE
+Disallow: /CNAME
+Disallow: /.gitignore
+Disallow: /.gitattributes
