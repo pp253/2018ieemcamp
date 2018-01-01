@@ -1,4 +1,3 @@
-
 const Metalsmith = require('metalsmith')
 const markdown = require('metalsmith-markdown')
 const jade = require('metalsmith-jade')
@@ -8,8 +7,8 @@ const SitemapGenerator = require('sitemap-generator')
 
 const metadata = {
   title: '2018清大工程領袖營',
-  description: "It's about saying »Hello« to the World.",
-  url: "https://2018ieemcamp.me/"
+  description: '誰說工程一定要這麼嚴肅？2018清大工程領袖營歡迎您～,
+  url: 'https://2018ieemcamp.me/'
 }
 
 Metalsmith(__dirname)

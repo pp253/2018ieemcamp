@@ -20,13 +20,13 @@ html(lang="zh-tw")
     link(rel="stylesheet" href="/src/style/base.css")
     block styles
     
-    script.
+    script(type="application/ld+json").
       {
         "@context": "http://schema.org",
         "@type": "Organization",
-        "url": #{url},
-        "name": #{title},
-        "description": #{description}
+        "url": "#{url}",
+        "name": "#{title}",
+        "description": "#{description}"
       }
     script(async src="https://www.googletagmanager.com/gtag/js?id=UA-108648613-1")
     script.
