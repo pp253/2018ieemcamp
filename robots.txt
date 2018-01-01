@@ -1,4 +1,4 @@
-Sitemap: https://2018ieemcamp.me/sitemap.xml
+User-agent: *
 Disallow: /src/
 Disallow: /build.js
 Disallow: /package.json
@@ -7,3 +7,4 @@ Disallow: /LICENSE
 Disallow: /CNAME
 Disallow: /.gitignore
 Disallow: /.gitattributes
+Sitemap: https://2018ieemcamp.me/sitemap.xml
