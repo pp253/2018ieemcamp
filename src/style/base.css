@@ -6044,7 +6044,8 @@ nav {
         position: absolute;
         top: 11.5px; }
   nav .menu {
-    float: right; }
+    float: right;
+    padding-top: 3px; }
     nav .menu a.btn {
       min-width: 31px;
       margin-left: 0.5rem; }

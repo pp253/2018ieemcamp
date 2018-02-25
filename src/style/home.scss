@@ -3,12 +3,25 @@
 header.full {
   margin: 0;
   padding: 0;
-  padding-top: 60vh;
   height: 100vh;
-  // background-image: url("https://img1.wsimg.com/isteam/stock/107466/");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  .title  {
+    position: absolute;
+    bottom: 32px;
+    h2 {
+      padding-bottom: 8px;
+    }
+    h1 {
+      padding-top: 8px;
+    }
+    h1 span, h2 span {
+      background-color: rgba(234, 96, 97, 0.9);
+      padding: 8px;
+      white-space: nowrap;
+    }
+  }
 }
 
 article {

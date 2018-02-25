@@ -1,11 +1,21 @@
 header.full {
   margin: 0;
   padding: 0;
-  padding-top: 60vh;
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
+  header.full .title {
+    position: absolute;
+    bottom: 32px; }
+    header.full .title h2 {
+      padding-bottom: 8px; }
+    header.full .title h1 {
+      padding-top: 8px; }
+    header.full .title h1 span, header.full .title h2 span {
+      background-color: rgba(234, 96, 97, 0.9);
+      padding: 8px;
+      white-space: nowrap; }
 
 article {
   background-color: #fff;

@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "sass": "node-sass ./src/style/home.scss ./src/style/home.css && node-sass ./src/style/base.scss ./src/style/base.css",
-    "sass-watch": "node-sass -w ./style -o ./style",
+    "sass-watch": "node-sass -w ./src/style -o ./src/style",
     "build": "node build"
   },
   "author": "pp253",
