@@ -27,15 +27,15 @@ Metalsmith(__dirname)
     directory: './src/templates'
   }))
   .build(function (err, files) {
-    if (err) { throw err; }
+    if (err) { throw err }
     console.log('files created')
-  });
+  })
 
 // create generator
 const generator = SitemapGenerator('https://2018ieemcamp.me', {
   stripQuerystring: false
 })
- 
+
 generator.on('done', () => {
   console.log('sitemaps created')
 })
