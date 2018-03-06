@@ -6,16 +6,26 @@ header.full {
   background-position: center;
   background-size: cover; }
   header.full .title {
-    position: absolute;
-    bottom: 32px; }
-    header.full .title h2 {
-      padding-bottom: 8px; }
-    header.full .title h1 {
-      padding-top: 8px; }
-    header.full .title h1 span, header.full .title h2 span {
-      background-color: rgba(234, 96, 97, 0.9);
+    width: 100%;
+    height: 100vh; }
+    header.full .title .header-box {
+      position: absolute;
+      bottom: 32px; }
+      header.full .title .header-box h2 {
+        padding-bottom: 8px; }
+      header.full .title .header-box h1 {
+        padding-top: 8px; }
+      header.full .title .header-box h1 span,
+      header.full .title .header-box h2 span {
+        background-color: #ea6061;
+        padding: 8px;
+        white-space: nowrap; }
+    header.full .title .msg-box {
+      background-color: #ea6061;
       padding: 8px;
-      white-space: nowrap; }
+      position: absolute;
+      top: 79px;
+      right: 15px; }
 
 article {
   background-color: #fff;
