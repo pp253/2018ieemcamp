@@ -19,8 +19,8 @@ html(lang="zh-tw")
     title=pagetitle ? pagetitle + ' | ' + title : title
 
     link(rel="icon" href="/src/image/favicon.png")
-
-    link(rel="stylesheet" href="/src/style/base.css")
+    style
+      include ../style/base.css
     block styles
     
     script(type="application/ld+json").
