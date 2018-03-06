@@ -11,7 +11,7 @@ const metadata = {
   url: 'https://2018ieemcamp.me/',
   keywords:
     '工業工程, 工工, 清大工程領袖營, 清大工業工程營, 清大工工營, 工工營',
-  image: 'https://2018ieemcamp.me/src/image/banner.jpg'
+  image: 'https://2018ieemcamp.me/src/image/banner.png'
 }
 
 Metalsmith(__dirname)
