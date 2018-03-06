@@ -9,7 +9,9 @@ const metadata = {
   title: '2018清大工程領袖營',
   description: '誰說工程一定要這麼嚴肅？2018清大工程領袖營歡迎您～',
   url: 'https://2018ieemcamp.me/',
-  keywords: '工業工程, 工工, 清大工程領袖營, 清大工業工程營, 清大工工營, 工工營'
+  keywords:
+    '工業工程, 工工, 清大工程領袖營, 清大工業工程營, 清大工工營, 工工營',
+  image: 'https://2018ieemcamp.me/src/image/banner.jpg'
 }
 
 Metalsmith(__dirname)
@@ -17,17 +19,23 @@ Metalsmith(__dirname)
   .source('./src/view')
   .destination('./')
   .clean(false)
-  .use(jade({
-    locals: metadata
-  }))
+  .use(
+    jade({
+      locals: metadata
+    })
+  )
   .use(markdown())
   .use(permalinks())
-  .use(layouts({
-    engine: 'jade',
-    directory: './src/templates'
-  }))
-  .build(function (err, files) {
-    if (err) { throw err }
+  .use(
+    layouts({
+      engine: 'jade',
+      directory: './src/templates'
+    })
+  )
+  .build(function(err, files) {
+    if (err) {
+      throw err
+    }
     console.log('files created')
   })
 
