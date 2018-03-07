@@ -10,7 +10,7 @@ const metadata = {
   description: '誰說工程一定要這麼嚴肅？2018清大工程領袖營歡迎您～',
   url: 'https://2018ieemcamp.me/',
   keywords:
-    '工業工程, 工工, 清大工管, 清大工程領袖營, 清大工業工程營, 清大工工營, 工工營',
+    '清大工工, 清大工管, 清華大學, 營隊, 2018, 工業工程, 工工, 清大工程領袖營, 清大工業工程營, 清大工工營, 工工營',
   image: 'https://2018ieemcamp.me/src/image/banner.png'
 }
 
