@@ -4,8 +4,7 @@
   "description": "2018ieemcamp.me",
   "main": "main.js",
   "scripts": {
-    "sass":
-      "node-sass ./src/style/home.scss ./src/style/home.css --output-style compressed && node-sass ./src/style/base.scss ./src/style/base.css --output-style compressed",
+    "sass": "node-sass ./src/style/home.scss ./src/style/home.css --output-style compressed && node-sass ./src/style/base.scss ./src/style/base.css --output-style compressed",
     "sass-watch": "node-sass -w ./src/style -o ./src/style",
     "build": "node build"
   },
@@ -25,7 +24,9 @@
   },
   "devDependencies": {},
   "standard": {
-    "ignore": ["/dist/*"],
+    "ignore": [
+      "/dist/*"
+    ],
     "parser": "babel-eslint",
     "globals": []
   }
