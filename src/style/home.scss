@@ -14,7 +14,7 @@ header.full {
 
     .header-box {
       position: absolute;
-      bottom: 32px + 52px;
+      bottom: 32px + 52px + 64px;
 
       h2 {
         padding-bottom: 8px;
@@ -33,7 +33,7 @@ header.full {
       background-color: rgba(234, 96, 97, 1);
       padding: 8px;
       position: absolute;
-      bottom: 15px;
+      bottom: 15px + 64px;
       right: 15px;
       width: calc(100% - 30px);
       text-align: center;
