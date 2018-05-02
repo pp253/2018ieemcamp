@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://2018ieemcamp.me/sitemap.xml</loc>
+  </url>
+  <url>
     <loc>https://2018ieemcamp.me/</loc>
   </url>
   <url>
-    <loc>https://2018ieemcamp.me/sitemap.xml</loc>
+    <loc>https://2018ieemcamp.me/acceptance/</loc>
   </url>
   <url>
     <loc>https://2018ieemcamp.me/enrollment/</loc>
@@ -13,12 +16,9 @@
     <loc>https://2018ieemcamp.me/contact_us/</loc>
   </url>
   <url>
-    <loc>https://2018ieemcamp.me/faq/</loc>
-  </url>
-  <url>
     <loc>https://2018ieemcamp.me/transportation/</loc>
   </url>
   <url>
-    <loc>https://2018ieemcamp.me/acceptance/</loc>
+    <loc>https://2018ieemcamp.me/faq/</loc>
   </url>
 </urlset>
